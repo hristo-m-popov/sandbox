@@ -1,4 +1,4 @@
-package com.hristo.sandbox.rest;
+package com.hristo.sandbox.controller;
 
 import com.hristo.sandbox.entity.Student;
 import com.hristo.sandbox.service.StudentService;
