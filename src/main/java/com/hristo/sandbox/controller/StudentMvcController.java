@@ -5,10 +5,12 @@ import com.hristo.sandbox.service.StudentService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
 
 @Controller
+@RequestMapping("/students")
 public class StudentMvcController {
     private final StudentService studentService;
 
@@ -16,7 +18,7 @@ public class StudentMvcController {
         this.studentService = studentService;
     }
 
-    @GetMapping("/students-page")
+    @GetMapping("/list")
     public String getStudents(Model model){
         List<Student> studentsList = studentService.findAll();
 

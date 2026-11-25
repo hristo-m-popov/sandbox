@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Teacher Form</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+
+<h1>Teacher Directory</h1>
+<hr>
+
+<form action="#" th:action="@{/teachers/save}"
+                    th:object="${teacher}" method="POST">
+
+    <input type="text" th:field="*{firstName}" placeholder="First Name">
+    <input type="text" th:field="*{lastName}" placeholder="Last Name">
+    <input type="text" th:field="*{email}" placeholder="Email">
+    <input type="text" th:field="*{age}" placeholder="Age">
+    <input type="text" th:field="*{mainSubject}" placeholder="Main Subject">
+    <input type="text" th:field="*{salary}" placeholder="Salary">
+
+    <button type="submit">Save</button>
+</form>
+
+
+
+</body>
+</html>
