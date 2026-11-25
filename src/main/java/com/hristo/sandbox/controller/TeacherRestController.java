@@ -50,6 +50,6 @@ public class TeacherRestController {
             teacherService.deleteById(teacherId);
         }
 
-        return "Deleted student with id - " + teacherId;
+        return "Deleted teacher with id - " + teacherId;
     }
 }
